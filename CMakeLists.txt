@@ -9,6 +9,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -Wextra")
 
 set(SRC 
   ${PROJECT_SOURCE_DIR}/src/generic_timeout_function.cpp
+  ${PROJECT_SOURCE_DIR}/src/safe_read_write.cpp
 )
 
 foreach(cpp_file ${SRC})
