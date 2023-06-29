@@ -5,6 +5,7 @@
 #include <type_traits>
 #include <iostream>
 
+// TODO: terminal 
 /**
  * @brief Safely update an object T between reading and writing threads
  * 

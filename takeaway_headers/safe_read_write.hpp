@@ -6,6 +6,7 @@
 #include <condition_variable>
 #include <type_traits>
 
+// TODO: terminate
 /**
  * @brief Safely update an object T between reading and writing threads
  * 

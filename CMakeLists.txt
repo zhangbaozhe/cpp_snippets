@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15.2)
 project(cpp_snippet)
 
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -pthread")
 set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -Wextra -fsanitize=address,undefined")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -Wextra")
@@ -10,6 +10,9 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -Wextra")
 set(SRC 
   ${PROJECT_SOURCE_DIR}/src/generic_timeout_function.cpp
   ${PROJECT_SOURCE_DIR}/src/safe_read_write.cpp
+  ${PROJECT_SOURCE_DIR}/src/generic_object_wrapper.cpp
+  ${PROJECT_SOURCE_DIR}/src/generic_function_wrapper.cpp
+  ${PROJECT_SOURCE_DIR}/src/generic_function_wrapper_poly.cpp
 )
 
 foreach(cpp_file ${SRC})
